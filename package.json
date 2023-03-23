@@ -1,0 +1,19 @@
+{
+  "name": "castaar",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "watch:sass": "sass --watch --color ./scss:./css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.2.1",
+    "jquery": "^3.6.1",
+    "wow.js": "^1.2.2"
+  }
+}

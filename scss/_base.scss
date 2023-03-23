@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #000;
+  position: relative;
+  font-family: "Gilroy", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+p,
+span {
+  font-size: 20px;
+  @media only screen and (max-width: $mobile-screen) {
+    font-size: 16px;
+  }
+}
+.wow {
+  visibility: hidden;
+}

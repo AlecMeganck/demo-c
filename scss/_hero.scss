@@ -1,0 +1,60 @@
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+  font-size: 20px;
+  position: relative;
+  h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    width: 1350px;
+    text-align: center;
+    color: #c1a360;
+  }
+  &-service {
+    position: absolute;
+    bottom: 100px;
+    left: 100px;
+    color: white;
+    &:hover {
+      transition: 0.2s;
+      color: #c1a360;
+      i {
+        transition: 0.2s;
+        margin-left: 15px;
+      }
+    }
+    @extend .icon;
+  }
+  &-contact {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    color: white;
+    &:hover {
+      transition: 0.2s;
+      color: #c1a360;
+      i {
+        transition: 0.2s;
+        margin-left: 15px;
+      }
+    }
+    @extend .icon;
+  }
+  @media only screen and (max-width: $mobile-screen) {
+    padding: 0 25px;
+    h1 {
+      font-size: 50px;
+    }
+    &-service {
+      left: 25px;
+      bottom: 25px;
+    }
+    &-contact {
+      right: 25px;
+      bottom: 25px;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.statement {
+  height: 85vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  text-transform: uppercase;
+  flex-direction: column;
+  &-gold {
+    background: -webkit-linear-gradient(black, #c1a360);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  &-base {
+    color: white;
+    font-size: 80px;
+    span {
+      font-size: 80px;
+      color: #c1a360;
+    }
+  }
+  &-hashtag {
+    color: white;
+    margin-top: 30px;
+    span {
+      color: #c1a360;
+    }
+  }
+  @media only screen and (max-width: $mobile-screen) {
+    font-size: 40px;
+    text-align: center;
+    &-base {
+      font-size: 40px;
+      padding: 0 25px;
+    }
+  }
+}

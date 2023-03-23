@@ -1,0 +1,50 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 65px 0 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 9999;
+  @media only screen and (max-width: $mobile-screen) {
+    padding: 35px 0 15px;
+  }
+  > svg {
+    height: 35px;
+    margin-left: 100px;
+    cursor: pointer;
+    @media only screen and (max-width: $mobile-screen) {
+      margin-left: 25px;
+    }
+  }
+  i {
+    margin-right: 100px;
+    color: #c1a360;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+    @media only screen and (max-width: $mobile-screen) {
+      margin-right: 25px;
+    }
+  }
+}
+.sidemenu {
+  svg {
+    margin-right: 100px;
+    height: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+    @media only screen and (max-width: $mobile-screen) {
+      margin-right: 25px;
+      background-color: black;
+    }
+    path {
+      fill: #c1a360;
+    }
+  }
+  &-none {
+    display: none;
+    transition: 0.2s;
+  }
+}

@@ -1,0 +1,24 @@
+.nav {
+  position: absolute;
+  top: 120px;
+  right: 100px;
+  display: none;
+  @media only screen and (max-width: $mobile-screen) {
+    right: 25px;
+    background-color: black;
+    padding: 0 0 15px 15px;
+  }
+  a {
+    color: white;
+    text-align: right;
+    margin: 5px 0;
+    text-transform: uppercase;
+    &:hover {
+      color: #c1a360;
+    }
+  }
+  &-open {
+    display: flex;
+    flex-direction: column;
+  }
+}

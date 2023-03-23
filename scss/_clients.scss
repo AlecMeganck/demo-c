@@ -1,0 +1,100 @@
+.clients {
+  height: 100vh;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  &-title {
+    display: flex;
+    align-items: end;
+    h2 {
+      font-size: 180px;
+      line-height: 150px;
+      text-transform: uppercase;
+      -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #c1a360;
+      z-index: 9999;
+      margin-top: 75px;
+      text-align: right;
+      white-space: nowrap;
+      white-space: pre-wrap;
+    }
+    span {
+      font-size: 180px;
+      line-height: 150px;
+      text-transform: uppercase;
+      -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #c1a360;
+      z-index: 9999;
+    }
+  }
+  &-subtitle {
+    color: white;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  &-info {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 16px;
+    span {
+      color: #c1a360;
+    }
+  }
+  &-grid {
+    display: grid;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(9, 1fr);
+    row-gap: 25px;
+    align-items: center;
+    margin: 150px 0 100px;
+  }
+  &-item {
+    opacity: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      transition: 0.2s;
+      opacity: 1;
+    }
+  }
+  &-cta {
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    @extend .icon;
+    &:hover {
+      transition: 0.2s;
+      color: #c1a360;
+      i {
+        transition: 0.2s;
+        margin-left: 15px;
+      }
+    }
+  }
+  @media only screen and (max-width: $mobile-screen) {
+    padding: 0 25px;
+    height: auto;
+    &-title {
+      flex-direction: column;
+      align-items: start;
+      h2 {
+        font-size: 60px;
+        line-height: 60px;
+        text-align: left;
+      }
+      span {
+        display: none;
+      }
+    }
+    &-grid {
+      margin: 50px 0 25px;
+      grid-template-columns: repeat(2, 1fr);
+      row-gap: 20px;
+    }
+  }
+}
